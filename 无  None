@@ -1,0 +1,63 @@
+此文件属于Python
+This file belongs to Python
+代码
+Code
+import turtle
+t = turtle.Turtle()
+t.speed(10000000000000000000000000000000000000000)
+'''
+定义 Definition
+形状 Shape
+'''
+#正方
+def iPad():
+    t.pendown()
+    t.forward(100)
+    t.left(90)
+    t.forward(100)
+    t.left(90)
+    t.forward(100)
+    t.left(90)
+    t.forward(100)
+    t.left(90)
+    t.penup()
+#长方 Rectangular
+def iPod():
+    t.pendown()
+    t.forward(100)
+    t.left(90)
+    t.forward(80)
+    t.left(90)
+    t.forward(100)
+    t.left(90)
+    t.forward(80)
+    t.left(90)
+    t.penup()
+#Π
+def Mac():
+    t.pendown()
+    for a in range(360):
+        t.forward(100)
+        t.left(90)
+        t.forward(100)
+        t.left(90)
+        t.forward(100)
+        t.left(90)
+        t.forward(100)
+        t.left(90)
+        t.left(1)
+    t.penup
+#移动 Mobile
+def up():
+    t.forward(1)
+def le():
+    t.left(1)
+def yz():
+    t.right(1)
+turtle.Screen().onkeypress(iPod,"E")
+turtle.Screen().onkeypress(iPad,"W")
+turtle.Screen().onkeypress(Mac,"R")
+turtle.Screen().onkeypress(up,"Up")
+turtle.Screen().onkeypress(le,"Left")
+turtle.Screen().onkeypress(yz,"Right")
+turtle.Screen().listen()
